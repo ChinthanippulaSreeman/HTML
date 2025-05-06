@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+</head>
+<body>
+    <!-- <form>
+    <fieldset>
+    <legend>SIGN UP FORM</legend>
+      <label for="name">NAME:</label>
+      <input id="name" type="text"><br><br>
+      <label for="email">EMAIL:</label>
+      <input id="email" type="email"><br><br>
+      <label for="pass">PASSWORD:</label>
+      <input id="pass" type="password"><br><br>
+      <button>REGISTER</button>
+</fieldset>
+</form> -->
+<form autocomplete="off" novalidate>
+    <fieldset>
+        <legend>REGISTER FORM</legend>
+        <!-- name -->
+        <label for="name"> NAME:</label>
+        <input id="name" type="text" required placeholder="name is" autofocus ><br><br>
+
+          <!-- email -->
+        <label for="email"> EMALE:</label>
+        <input id="email" type="email" placeholder="mail is" value="sree@123" readonly><br><br>
+
+         <!-- password -->
+        <label for="passw"> PASSWORD:</label>
+        <input id="passw" type="password"><br><br> 
+
+        <!-- phnno -->
+        <label for="phn.no">PHN.NO:</label>
+        <!-- TYPE=NUMBER/TEL -->
+        <input id="phn.no" type="tel" maxlength="10" disabled><br><br>
+
+        <!-- date of birth -->
+        <!-- TYPE=DATETIME LOCAL /DATE -->
+        <label for="dob">DOB:</label>
+        <input id="dob" type="date"><br><br>
+
+        <!-- radio -->
+         <label for="radio" >Gender:</label>
+         <input type="radio" id="male" name="1" value="male" checked>
+         <label for="male">MALE</label>
+         <input type="radio" id="female" name="1">
+         <label for="female">FEMALE</label>
+         <input type="radio" id="OTHER" name="1">
+         <label for="OTHER">OTHER</label><BR><br>
+
+            <!-- checkbox -->
+             <label for="skills">SKILLS:</label>
+            <input type="checkbox" id="html" name="2">
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css" name="2">
+            <label for="css">CSS</label>
+            <input type="checkbox" id="js" name="2">
+            <label for="js">JAVA SCRIPT</label><br><br>
+
+            <!-- dropdown -->
+             <label for="3" >COUNTRY:</label>
+             <select id="3">
+                <option value="">SELECT COUNTRY</option>
+                <option value>INDIA</option>
+                <option value>AUSTRALIA</option>
+                <option value>ENGLAND</option>
+             </select><br><br>
+
+             <!-- feedback -->
+              <label for="area">FEEDBACK:</label>
+              <textarea id="area" cols="20" rows="10"></textarea><br><br>
+
+              <!-- uploadfile -->
+               <label for="form">SELECT FILE:</label>
+               <input type="file" id="form"><br><br>
+               
+               <!-- submit -->
+              <input type="submit" value="submitt">
+              <input type="button" value="register">
+
+    </fieldset>
+</form>
+</body>
+</html>
